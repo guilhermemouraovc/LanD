@@ -232,56 +232,50 @@
     </nav>
 
     <!-- Spacer for fixed nav + ticker -->
-    <div class="h-28"></div>
+    <div class="h-40"></div>
     
     <!-- Hero Section -->
-    <section class="relative overflow-hidden">
-        <div class="flex flex-col md:flex-row min-h-[600px]">
+    <section class="container mx-auto px-4 py-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
             <!-- Left Column - Copy -->
-            <div class="relative z-10 w-full md:w-1/2 flex items-center bg-brand-dark px-8 md:px-16 lg:px-24 py-20">
-                <div class="space-y-8 max-w-xl">
-                    <div class="space-y-4">
-                        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                            <span class="text-brutal-white">Conectando você</span><br>
-                            <span class="text-brutal-white">aos </span><span class="text-brand-cyan">melhores</span><br>
-                            <span class="text-brand-cyan">momentos.</span>
-                        </h1>
-                        <p class="text-lg text-gray-300 leading-relaxed">
-                            A ponte entre você e os melhores eventos de Pernambuco. Compra segura, experiência simples, sem taxas extras.
-                        </p>
-                    </div>
+            <div class="space-y-8 order-2 md:order-1">
+                <div class="space-y-4">
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                        <span class="text-brutal-white">Conectando você</span><br>
+                        <span class="text-brutal-white">aos </span><span class="text-brand-cyan">melhores</span><br>
+                        <span class="text-brand-cyan">momentos.</span>
+                    </h1>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        A ponte entre você e os melhores eventos de Pernambuco. Compra segura, experiência simples, sem taxas extras.
+                    </p>
+                </div>
 
-                    <!-- Selo Parceiro -->
-                    <div class="inline-flex items-center space-x-3 bg-brand-darker/60 border border-brand-cyan/30 rounded-full px-5 py-2.5">
-                        <span class="text-brand-cyan text-lg">✓</span>
-                        <span class="text-brutal-white font-semibold text-sm">Parceiro Oficial Carvalheira</span>
-                    </div>
+                <!-- Selo Parceiro -->
+                <div class="inline-flex items-center space-x-3 bg-brand-darker/60 border border-brand-cyan/30 rounded-full px-5 py-2.5">
+                    <span class="text-brand-cyan text-lg">✓</span>
+                    <span class="text-brutal-white font-semibold text-sm">Parceiro Oficial Carvalheira</span>
+                </div>
 
-                    <!-- CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="https://wa.me/5581998471385?text=Gostaria%20de%20receber%20o%20cat%C3%A1logo%20de%20eventos%20da%20Ticketpe" target="_blank" class="px-8 py-4 bg-brutal-yellow text-brand-dark font-bold text-lg rounded-lg shadow-brutal hover:translate-x-1 hover:translate-y-1 transition text-center">
-                            Explorar Eventos
-                        </a>
-                        <a href="#como-funciona" class="px-8 py-4 border-2 border-gray-500 rounded-lg hover:bg-brutal-yellow hover:text-brand-dark hover:border-brutal-yellow font-bold text-lg transition text-center">
-                            Como Funciona
-                        </a>
-                    </div>
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/5581998471385?text=Gostaria%20de%20receber%20o%20cat%C3%A1logo%20de%20eventos%20da%20Ticketpe" target="_blank" class="px-8 py-4 bg-brutal-yellow text-brand-dark font-bold text-lg rounded-lg shadow-brutal hover:translate-x-1 hover:translate-y-1 transition text-center">
+                        Explorar Eventos
+                    </a>
+                    <a href="#como-funciona" class="px-8 py-4 border-2 border-gray-500 rounded-lg hover:bg-brutal-yellow hover:text-brand-dark hover:border-brutal-yellow font-bold text-lg transition text-center">
+                        Como Funciona
+                    </a>
                 </div>
             </div>
 
-            <!-- Right Column - Event Image -->
-            <div class="relative w-full md:w-1/2 min-h-[400px] md:min-h-full">
-                <img src="carvanovo.webp" alt="Carvalheira na Ladeira" class="absolute inset-0 w-full h-full object-cover">
-                <!-- Diagonal overlay that creates the wave/angle transition -->
-                <div class="hidden md:block absolute inset-y-0 left-0 w-32" style="background: linear-gradient(to right, #2a3447 0%, transparent 100%);"></div>
+            <!-- Right Column - Card do Evento -->
+            <div class="relative flex items-center justify-center order-1 md:order-2">
+                <img src="carva.png" alt="Carvalheira na Ladeira" class="w-full h-auto rounded-2xl">
+                <!-- Selo parcelamento -->
+                <div class="absolute -top-3 -right-3 bg-white text-brand-dark px-4 py-2 rounded-lg shadow-lg">
+                    <span class="block text-[10px] font-semibold uppercase tracking-wide text-brand-blue">Parcele em até</span>
+                    <span class="block text-lg font-bold leading-tight text-brand-blue">12x <span class="text-sm">sem juros</span></span>
+                </div>
             </div>
-        </div>
-
-        <!-- Wave Divider -->
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20">
-            <svg class="relative block w-full" style="height: 80px;" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,70 1440,60 L1440,80 L0,80 Z" fill="#1a202c"></path>
-            </svg>
         </div>
     </section>
 
@@ -592,7 +586,7 @@
                         <span class="text-2xl text-brand-cyan faq-icon">+</span>
                     </button>
                     <div class="hidden px-8 pb-6 faq-content">
-                        <p class="text-gray-300">Você recebe seu ingresso digital por email e também pode acessar pelo nosso app. É um QR Code que você apresenta na portaria do evento.</p>
+                        <p class="text-gray-300">O ingresso fica disponível na plataforma oficial do evento. É um QR Code que você apresenta na portaria.</p>
                     </div>
                 </div>
                 
